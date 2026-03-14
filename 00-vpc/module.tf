@@ -1,7 +1,7 @@
 module "vpc" {
-    source = "git::https://github.com/asifali-shaik/roboshop-infra-dev.git?ref=main"
+     source = "C:/devops/daws88s/repos/terraform-aws-vpc"
     project = var.project
-    envrionment = var.enrionment
-    is_peering_required = true
-  
+    envrionment = var.envrionment
+    is_peering_requried = true 
+
 }
