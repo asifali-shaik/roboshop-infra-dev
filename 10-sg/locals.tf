@@ -1,3 +1,3 @@
 locals {
-  vpc_id = "/${var.project}-/${var.envrionment}/vpc_id"
+  vpc_id = data.aws_ssm_parameter.vpc_id.value
 }

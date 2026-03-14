@@ -1,8 +1,7 @@
 module "sg" {
-    source = "git::https://github.com/asifali-shaik/roboshop-infra-dev.git?ref=main"
+    source = "C:/devops/daws88s/repos/terraform-aws-sg"
     project = var.project
-    environment = var.envrionment
-    sg_name = "mongodb"
+    envrionment = var.envrionment
+    sg_name = "monogdb"
     vpc_id = local.vpc_id
-  
 }
